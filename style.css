@@ -1,0 +1,48 @@
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+.content-tabuada{
+    width: 100%;
+    text-align: center;
+    max-width: 500px;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+}
+
+.content-tabuada table{
+    width: 100%;
+    border-collapse: collapse; 
+}
+/* border-collapse:collapse serve para tirar a divisao entre as colunas */
+
+.content-tabuada td{
+    padding: 10px;
+    border-top-width: 1px ;
+    border-top-style: solid;
+    border-top-color: teal;
+}
+
+.content-tabuada tbody tr:nth-child(odd){
+    background-color: rgb(213, 207, 197);
+}
+/* botei tbody antes do tr, para nao contar a linha do thead. */
+/* nth-child() serve para passar uma posição e ele achar o elemento. por exemplo nth-child(3), ele ira buscar a 3ª linha. (odd)ou (even) serve para ele fazer linha sim, linha nao */
+
+.content-tabuada tbody tr:hover{
+    background-color: rgb(96, 94, 90);
+    cursor: pointer;
+}
+
+#valorA{
+    width: 100%;
+    padding: 10px;
+}
+
